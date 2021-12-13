@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="CSS/style.css">
+	<link rel="stylesheet" href="CSS/animate.min.css">
+	<link rel="shortcut icon" href="" type="image/png">
+	<script defer src="JS/jquery-3.6.0.min.js"></script>
+	<script defer src="JS/slick.min.js"></script>
+	<script defer src="JS/about-me-script.js"></script>
+	<script src="JS/theme.js"></script>
+	<title>Обо мне</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="block animate__animated animate__fadeInLeftBig">
+			<ul class="block__list animate__animated">
+				<li data-link="index" data-langChange="about" class="block__item">Главная</li>
+				<li data-link="about-me" data-langChange="about" class="block__item weRHere">Обо мне</li>
+				<li data-link="my-skills" data-langChange="mySkills" class="block__item">Навыки</li>
+				<li data-link="my-works" data-langChange="myWorks" class="block__item">Портфолио</li>
+				<li data-link="contact-me" data-langChange="contact" class="block__item">Контакты</li>
+			</ul>
+			<h2 class="block__title">Обо мне</h2>
+			<div class="about-me">
+				<div class="about-me__photo">
+					<img src="IMG/me.png" alt="my photo" class="about-me__img">
+				</div>
+				<div class="about-me__inform">
+					Меня зовут <span class="me-spec-style">Роман</span>. 
+					<br><br>
+					Занимаюсь разработкой около года. <br>
+					Интересуюсь нативным JS, библиотекой React и имею огромное желание расти и развиваться в сфере веб разработки.
+					<br><br>
+					Мой гитхаб аккаунт можно посмотреть по <a href="https://github.com/limpch" target="_blank" class="about-me__github">ссылке</a>.
+					Увлекаюсь компьютерными играми и монтажем.
+				</div>
+			</div>
+			<ul class="about-me-list">
+				<li class="about-me-list__item"><span class="about-me-list__key">Проживаю</span><span>Краснодар</span></li>
+				<li class="about-me-list__item"><span class="about-me-list__key">Возраст</span><span>18 лет</span></li>
+				<li class="about-me-list__item"><span class="about-me-list__key">Родился</span><span>26 декабря 2003 год</span></li>
+			</ul>
+		</div>
+	</div>
+</body>
+
+</html>
