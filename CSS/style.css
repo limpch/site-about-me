@@ -103,6 +103,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0px 30px;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 10px 10px;
+  }
 }
 
 .helloblock-wrapper {
@@ -281,6 +288,66 @@ body {
   opacity: 0;
 }
 
+@media (max-width: 768px) {
+  .helloblock {
+    padding: 5px;
+    height: 400px;
+  }
+  .helloblock__list {
+    margin: 0px 0px 40px 0px;
+    padding: 0px 0px 0px 0px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .helloblock__item {
+    margin: 0px 0px 5px 0px;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    width: 100px;
+  }
+  .helloblock__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    min-height: 197px;
+  }
+  .helloblock__message {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    margin: 0px 0px 30px 0px;
+  }
+  .helloblock__message span {
+    line-height: 24px;
+  }
+  .helloblock__message .typed-text-rus,
+  .helloblock__message .typed-text-eng {
+    font-size: 16px;
+  }
+  .helloblock__options {
+    -ms-flex-item-align: center;
+        align-self: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .light-lang-color {
   background: #353535;
   color: #f7f7f7;
@@ -377,6 +444,43 @@ body {
   font-size: 35px;
   line-height: 41px;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .block {
+    width: auto;
+    height: auto;
+  }
+  .block__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 15px 0px 20px 0px;
+  }
+  .block__list :not(:last-child) {
+    margin: 0px 0px 5px 0px;
+  }
+  .block__list .weRHereLight::before,
+  .block__list .weRHereDark::before {
+    left: 0px;
+  }
+  .block__item {
+    width: 100px;
+    font-size: 14px;
+    line-height: 23px;
+    text-align: center;
+    margin: 0px 0px 5px 0px;
+  }
+  .block__title {
+    font-size: 28px;
+    line-height: 41px;
+    margin: 0px 0px 10px 0px;
+  }
 }
 
 /*ABOUT ME*/
@@ -492,6 +596,50 @@ body {
   width: 103px;
   color: #847d7d;
   margin: 0px 26px 0px 0px;
+}
+
+@media (max-width: 768px) {
+  .about-me {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 65px;
+    padding: 30px;
+  }
+  .about-me__inform {
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .about-me-list {
+    padding: 20px;
+  }
+  .about-me-list__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .about-me-list__item:not(:last-child) {
+    margin: 0px 0px 22px 0px;
+  }
+  .about-me-list__key {
+    display: inline-block;
+    width: 103px;
+    color: #847d7d;
+    margin: 0px 26px 0px 0px;
+  }
 }
 
 /*MY SKILLS*/
@@ -813,6 +961,29 @@ body {
   opacity: 1;
 }
 
+@media (max-width: 768px) {
+  .skills > div {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    margin: 20px 0px;
+  }
+  .skills {
+    padding: 0px 0px;
+    margin: 0px 0px 40px 0px;
+  }
+  .istudy > div {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    margin: 20px 0px;
+  }
+  .istudy {
+    padding: 0px 0px;
+    margin: 0px 0px 80px 0px;
+  }
+}
+
 /*PORTFOLIO*/
 .portfolio {
   display: -webkit-box;
@@ -956,6 +1127,55 @@ body {
   line-height: 28px;
 }
 
+@media (max-width: 768px) {
+  .portfolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 5px 20px;
+  }
+  .portfolio__row {
+    margin: 20px 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .portfolio__row:nth-child(even) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .portfolio__image, .portfolio__img-over {
+    width: 300px;
+    height: 200px;
+  }
+  .portfolio__title {
+    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 20px 0px 20px 0px;
+  }
+  .portfolio__title.dark {
+    color: #BB86FC;
+  }
+  .portfolio__title.light {
+    color: #6200EE;
+  }
+  .portfolio__description {
+    text-align: center;
+    width: 300px;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0px 0px 30px 0px;
+  }
+}
+
 /*CONTACTS*/
 .contacts {
   display: -webkit-box;
@@ -1000,6 +1220,38 @@ body {
 .contacts__mine svg:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contacts__mine {
+    margin: 0px 0px 30px 0px;
+  }
+  .contacts__mine :not(:last-child) {
+    margin: 0px 26px 0px 0px;
+  }
+  .contacts__mine svg {
+    width: 50px;
+    height: 50px;
+  }
+  .contacts iframe {
+    min-width: 280px;
+    min-height: 1100px;
+  }
 }
 
 .light-BG-wrapper {
