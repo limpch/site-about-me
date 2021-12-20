@@ -1222,6 +1222,11 @@ body {
           transform: scale(1.1);
 }
 
+.contacts iframe {
+  width: 50%;
+  height: 450px;
+}
+
 @media (max-width: 768px) {
   .contacts {
     display: -webkit-box;
